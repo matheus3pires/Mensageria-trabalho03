@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mensageria.cadastrocontatos.CadastroDeContatosController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="48.0" prefWidth="157.0" text="Digite seu nome:" />
+      <Label layoutX="14.0" layoutY="74.0" prefHeight="48.0" prefWidth="157.0" text="Digite seu e-mail:" />
+      <Label layoutX="14.0" layoutY="134.0" prefHeight="48.0" prefWidth="157.0" text="Digite seu telefone:" />
+      <TextField fx:id="txtEmail" layoutX="15.0" layoutY="110.0" prefHeight="24.0" prefWidth="376.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="btnSalvar" layoutX="31.0" layoutY="267.0" mnemonicParsing="false" onAction="#salvarContatos" prefHeight="36.0" prefWidth="85.0" text="Salvar" />
+      <Button fx:id="btnLimpar" layoutX="160.0" layoutY="267.0" mnemonicParsing="false" onAction="#limparCampos" prefHeight="36.0" prefWidth="85.0" text="Limpar" />
+      <Button fx:id="btnSair" layoutX="284.0" layoutY="267.0" mnemonicParsing="false" onAction="#sair" prefHeight="36.0" prefWidth="85.0" text="Sair" />
+      <TextField fx:id="txtNome" layoutX="15.0" layoutY="50.0" prefHeight="24.0" prefWidth="376.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtTelefone" layoutX="15.0" layoutY="170.0" prefHeight="24.0" prefWidth="376.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label alignment="CENTER" layoutX="6.0" layoutY="325.0" prefHeight="24.0" prefWidth="173.0" text="By: Matheus Pires Santos" textAlignment="CENTER" />
+      <Pane fx:id="paneMensagem" layoutX="80.0" layoutY="195.0" prefHeight="48.0" prefWidth="246.0" visible="false">
+         <children>
+            <Label fx:id="lblMensagem" alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" prefHeight="48.0" prefWidth="246.0" textAlignment="CENTER" textFill="#5f1db8" underline="true" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
